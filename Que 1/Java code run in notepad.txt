@@ -1,0 +1,13 @@
+1) Open the notepad and write a Java program into it.
+2) Save the Java program by using the class name followed by .java extension.
+
+  for example our class name in Bike then save like Bike.java. 
+ 
+3)To compile and run a Java program, open the Command Prompt.
+4) To compile the Java program type javac Class name .java and run the command
+   for example out class name is Bike then write a command like that 
+    javac Bike.java
+5)When we compile a Java program without any error, it creates a .class file with the same name as the file name at the same location.
+
+6)To run the Java program, type. java Bike
+7) your code is executed.
