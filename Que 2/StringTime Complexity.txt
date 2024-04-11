@@ -1,0 +1,36 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        
+        int ite=10000;
+        
+        // check time taken by string
+        String str="k";
+        long startTime = System.currentTimeMillis();
+        String conStr = "";
+        for(int i=0; i<ite; i++){
+            conStr +=str;
+        }
+         long endTime = System.currentTimeMillis();
+         System.out.println("time take for String "+ startTime +"  ==  "+endTime);
+         
+         // for check time taken by stringbuilder
+         long startTimesb = System.currentTimeMillis();
+         StringBuilder sb=new StringBuilder();
+        for(int i=0; i<ite; i++){
+            sb.append(str);
+        }   
+        long endTimesb = System.currentTimeMillis();
+        System.out.println("time take for StringBuilder "+ startTimesb +"  ==  "+endTimesb);
+        
+        long startTimesu = System.currentTimeMillis();
+         StringBuffer su=new StringBuffer();
+        for(int i=0; i<ite; i++){
+            su.append(str);
+        }   
+        long endTimesu = System.currentTimeMillis();
+        System.out.println("time take for StringBuffer "+ startTimesu +"  ==  "+endTimesu);
+        
+         
+    }
+}
