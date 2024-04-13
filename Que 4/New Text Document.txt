@@ -1,0 +1,15 @@
+String:
+
+Efficiency: Inefficient for large strings because strings in Java are immutable. In each iteration of the loop, a new string is created, resulting in multiple string allocations and copies.
+Suitability: Suitable for small strings or situations where performance is not a concern.
+
+StringBuilder:
+
+Efficiency: More efficient than the String approach because StringBuilder is mutable. It reverses the string in-place without creating intermediate string objects.
+Suitability: Highly suitable for situations where performance matters, especially for large strings or in performance-critical applications.
+
+
+StringBuffer:
+
+Efficiency: Similar to StringBuilder, StringBuffer is also mutable and offers the same efficiency benefits. However, StringBuffer is thread-safe due to its synchronized methods, which may introduce some overhead compared to StringBuilder.
+Suitability: Suitable for scenarios where thread safety is required, such as in multi-threaded environments. However, if thread safety is not needed, StringBuilder is generally preferred due to its better performance.
