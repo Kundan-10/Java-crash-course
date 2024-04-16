@@ -24,6 +24,10 @@ public class Box <T>{
 	        
 	        String strValue = strBox.getItem();
 	        System.out.println("String value: " + strValue);
+	        
+	      // give error 
+//	         Box<Integer> invalidBox = new Box<>();
+//	         invalidBox.setItem("World");
 	}
 
 }
